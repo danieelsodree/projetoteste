@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    text-transform: initial;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    text-decoration: solid;
+    background-color: black;
+    color: white;
+}
+
+.titulo{
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 20px;
+    cursor: pointer;
+}
+
+.titulo:hover{
+    transition: 0.5s;
+    color: red;
+}
+
+.ul-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu{
+    padding: 10px;
+    margin-top: 25px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white
+}
+
+a:hover{
+    transition: 0.5s;
+    color: red;
+}
+
+.main-container{
+    padding-top: 100px;
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(./assets/img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+h2{
+    width: 500px;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+p{
+    width: 500px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.carrossel{
+    
+}
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: white;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 30px;
+    bottom: 20px;
+}
+
+.slider li:nth-child(2) label {
+    left: 60px;
+    bottom: 20px;
+}
+
+.slider li:nth-child(3) label {
+    left: 90px;
+    bottom: 20px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+    color: white;
+    font-size: 10px;
+}
